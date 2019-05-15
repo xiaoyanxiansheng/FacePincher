@@ -1,0 +1,905 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100484
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 462330}
+  m_Layer: 0
+  m_Name: bon_mouth_l
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &102834
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 470564}
+  m_Layer: 0
+  m_Name: bon_mouth_r
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &103848
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 401806}
+  m_Layer: 0
+  m_Name: bon_eyebrow_r
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &125534
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 471804}
+  m_Layer: 0
+  m_Name: bon_eyebrow_l
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &133514
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 488374}
+  m_Layer: 0
+  m_Name: bon_eye_l
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &137076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 473640}
+  - component: {fileID: 9561436}
+  - component: {fileID: 11420860}
+  m_Layer: 0
+  m_Name: face
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &138952
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 459612}
+  m_Layer: 0
+  m_Name: bon_cheek
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &150498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 467834}
+  m_Layer: 0
+  m_Name: dum_face
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &153176
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 469572}
+  m_Layer: 0
+  m_Name: bon_eye_r
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &172452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 470136}
+  - component: {fileID: 13706594}
+  m_Layer: 0
+  m_Name: face_m_try
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &191150
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 434404}
+  m_Layer: 0
+  m_Name: bon_chin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &191950
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 442830}
+  m_Layer: 0
+  m_Name: bon_mouth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &195890
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 424598}
+  m_Layer: 0
+  m_Name: bon_nose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401806
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103848}
+  m_LocalRotation: {x: 0.14056683, y: -0.16458133, z: -0.63405377, w: 0.74238116}
+  m_LocalPosition: {x: -0.11991989, y: 0.06901899, z: -0.026624877}
+  m_LocalScale: {x: 1, y: 1.1, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 467834}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0.0001, y: -25, z: -81.0001}
+--- !u!4 &424598
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195890}
+  m_LocalRotation: {x: 0.73182964, y: -0.6814876, z: -0.00000054221607, w: -0.000000867979}
+  m_LocalPosition: {x: -0.07194381, y: 0.09949739, z: 0.00000015258789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 467834}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -0.0001, y: 180, z: -94.079994}
+--- !u!4 &434404
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191150}
+  m_LocalRotation: {x: 0.76040554, y: -0.6494486, z: -0.000000504455, w: -0.00000089044397}
+  m_LocalPosition: {x: -0.00859375, y: 0.08764032, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 467834}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -0.0001, y: 180, z: -98.9999}
+--- !u!4 &442830
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191950}
+  m_LocalRotation: {x: 0.76040566, y: -0.6494484, z: -0.0000056409463, w: 0.000003741673}
+  m_LocalPosition: {x: -0.044857025, y: 0.087, z: 0}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1.07}
+  m_Children:
+  - {fileID: 462330}
+  - {fileID: 470564}
+  m_Father: {fileID: 467834}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -0.0001, y: -180, z: -99}
+--- !u!4 &459612
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138952}
+  m_LocalRotation: {x: 0.76040554, y: -0.6494486, z: -0.000000504455, w: -0.00000089044397}
+  m_LocalPosition: {x: -0.056498718, y: 0.09000459, z: 7.2759575e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 467834}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.0001, y: 180, z: -98.9999}
+--- !u!4 &462330
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100484}
+  m_LocalRotation: {x: -0.00000006241784, y: -0.00000017881406, z: -3.9877434e-14,
+    w: 1}
+  m_LocalPosition: {x: 0.0050235176, y: 0, z: -0.017736668}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 442830}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &467834
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150498}
+  m_LocalRotation: {x: -0.5376875, y: 0.4592288, z: 0.5376885, w: -0.45923}
+  m_LocalPosition: {x: 6.565324e-10, y: 1.58607, z: -0.04389761}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
+  m_Children:
+  - {fileID: 459612}
+  - {fileID: 434404}
+  - {fileID: 488374}
+  - {fileID: 469572}
+  - {fileID: 471804}
+  - {fileID: 401806}
+  - {fileID: 442830}
+  - {fileID: 424598}
+  m_Father: {fileID: 473640}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -89.9999, z: -98.9999}
+--- !u!4 &469572
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153176}
+  m_LocalRotation: {x: -0.0000008726762, y: -0.0000005154988, z: 0.6494484, w: -0.76040566}
+  m_LocalPosition: {x: -0.09756854, y: 0.0644841, z: -0.03017666}
+  m_LocalScale: {x: 1, y: 0.8, z: 0.70000005}
+  m_Children: []
+  m_Father: {fileID: 467834}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0.0001, y: 0, z: -81.0001}
+--- !u!4 &470136
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172452}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 473640}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!4 &470564
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102834}
+  m_LocalRotation: {x: 1, y: -0.000006719432, z: -0.000006719432, w: -0.00000006237269}
+  m_LocalPosition: {x: 0.005023508, y: 0, z: 0.017583458}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 442830}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -179.99919, z: -179.99919}
+--- !u!4 &471804
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125534}
+  m_LocalRotation: {x: 0.7344932, y: -0.62732154, z: -0.19680749, w: 0.16808994}
+  m_LocalPosition: {x: -0.11991989, y: 0.06901888, z: 0.026624877}
+  m_LocalScale: {x: 1, y: 1.1, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 467834}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -0.0001, y: 570, z: -98.999596}
+--- !u!4 &473640
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 467834}
+  - {fileID: 470136}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &488374
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133514}
+  m_LocalRotation: {x: 0.76040477, y: -0.64944947, z: -0.0000008011551, w: -0.00000032006017}
+  m_LocalPosition: {x: -0.09756854, y: 0.06448395, z: 0.03017666}
+  m_LocalScale: {x: 1, y: 0.8, z: 0.70000005}
+  m_Children: []
+  m_Father: {fileID: 467834}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -0.0001, y: -540, z: -98.999794}
+--- !u!95 &9561436
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137076}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 688973e456ed4914cb392021f95ae00b, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &11420860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abb446506a64d845ae3a4904edc5564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceParts:
+  - name: "\u4E0B\u989A\u53D8\u5316\u7EC4\u5408"
+    groups:
+    - name: "\u4E0B\u989AX\u4F4D\u79FB"
+      methods:
+      - name: "\u4E0B\u989A"
+        method: 0
+        bone: {fileID: 459612}
+        min: -0.07
+        max: -0.05
+        initValue: -0.056498718
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 459612}
+      sliderValue: 0.67506415
+      luaName: _cheekPosX
+    - name: "\u4E0B\u989AZ\u7F29\u653E"
+      methods:
+      - name: "\u4E0B\u989A"
+        method: 8
+        bone: {fileID: 459612}
+        min: 0.9
+        max: 1.07
+        initValue: 1
+        isInit: 1
+        preMethod: 8
+        preBone: {fileID: 459612}
+      sliderValue: 0.5882352
+      luaName: _cheekScaleZ
+  - name: "\u4E0B\u5DF4\u53D8\u5316\u7EC4\u5408"
+    groups:
+    - name: "\u4E0B\u5DF4X\u4F4D\u79FB"
+      methods:
+      - name: "\u4E0B\u5DF4"
+        method: 0
+        bone: {fileID: 434404}
+        min: -0.02
+        max: 0
+        initValue: -0.011406249
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 434404}
+      sliderValue: 0.5703125
+      luaName: _chinPosX
+    - name: "\u4E0B\u5DF4Y\u4F4D\u79FB"
+      methods:
+      - name: "\u4E0B\u5DF4"
+        method: 1
+        bone: {fileID: 434404}
+        min: 0.083
+        max: 0.09
+        initValue: 0.08764032
+        isInit: 1
+        preMethod: 1
+        preBone: {fileID: 434404}
+      sliderValue: 0.6629031
+      luaName: _chinPosY
+    - name: "\u4E0B\u5DF4Z\u7F29\u653E"
+      methods:
+      - name: "\u4E0B\u5DF4"
+        method: 8
+        bone: {fileID: 434404}
+        min: 1
+        max: 1.4
+        initValue: 1
+        isInit: 1
+        preMethod: 8
+        preBone: {fileID: 434404}
+      sliderValue: 0
+      luaName: _chinScaleZ
+  - name: "\u773C\u775B\u53D8\u5316\u7EC4\u5408"
+    groups:
+    - name: "\u773C\u775BX\u4F4D\u79FB"
+      methods:
+      - name: "\u5DE6\u773C"
+        method: 0
+        bone: {fileID: 488374}
+        min: -0.094
+        max: -0.103
+        initValue: -0.099431306
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 488374}
+      - name: "\u53F3\u773C"
+        method: 0
+        bone: {fileID: 469572}
+        min: -0.094
+        max: -0.103
+        initValue: -0.099431455
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 469572}
+      sliderValue: 0.39650485
+      luaName: _eyePosX
+    - name: "\u773C\u775BZ\u4F4D\u79FB"
+      methods:
+      - name: "\u5DE6\u773C"
+        method: 2
+        bone: {fileID: 488374}
+        min: 0.027
+        max: 0.036
+        initValue: 0.032823335
+        isInit: 1
+        preMethod: 2
+        preBone: {fileID: 488374}
+      - name: "\u53F3\u773C"
+        method: 2
+        bone: {fileID: 469572}
+        min: -0.027
+        max: -0.036
+        initValue: -0.03282334
+        isInit: 1
+        preMethod: 2
+        preBone: {fileID: 469572}
+      sliderValue: 0.35296223
+      luaName: _eyePosZ
+    - name: "\u773C\u775BY\u65CB\u8F6C"
+      methods:
+      - name: "\u5DE6\u773C"
+        method: 4
+        bone: {fileID: 488374}
+        min: 194
+        max: 166
+        initValue: 179.99998
+        isInit: 1
+        preMethod: 4
+        preBone: {fileID: 488374}
+      - name: "\u53F3\u773C"
+        method: 4
+        bone: {fileID: 469572}
+        min: -14
+        max: 14
+        initValue: -0.000019783462
+        isInit: 1
+        preMethod: 4
+        preBone: {fileID: 469572}
+      sliderValue: 0.49999928
+      luaName: _eyeRotY
+    - name: "\u773C\u775BZ\u7F29\u653E"
+      methods:
+      - name: "\u5DE6\u773C"
+        method: 8
+        bone: {fileID: 488374}
+        min: 0.5
+        max: 1.2
+        initValue: 1
+        isInit: 1
+        preMethod: 8
+        preBone: {fileID: 488374}
+      - name: "\u53F3\u773C"
+        method: 8
+        bone: {fileID: 469572}
+        min: 0.5
+        max: 1.2
+        initValue: 1
+        isInit: 1
+        preMethod: 8
+        preBone: {fileID: 469572}
+      sliderValue: 0.28571433
+      luaName: _eyeScaleZ
+    - name: "\u773C\u775BY\u7F29\u653E"
+      methods:
+      - name: "\u5DE6\u773C"
+        method: 7
+        bone: {fileID: 488374}
+        min: 0.3
+        max: 1.5
+        initValue: 1
+        isInit: 1
+        preMethod: 7
+        preBone: {fileID: 488374}
+      - name: "\u53F3\u773C"
+        method: 7
+        bone: {fileID: 469572}
+        min: 0.3
+        max: 1.5
+        initValue: 1
+        isInit: 1
+        preMethod: 7
+        preBone: {fileID: 469572}
+      sliderValue: 0.41666666
+      luaName: _eyeScaleY
+  - name: "\u7709\u6BDB\u53D8\u5316\u7EC4\u5408"
+    groups:
+    - name: "\u7709\u6BDBX\u4F4D\u79FB"
+      methods:
+      - name: "\u5DE6\u7709\u6BDB"
+        method: 0
+        bone: {fileID: 471804}
+        min: -0.113
+        max: -0.13
+        initValue: -0.11991974
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 471804}
+      - name: "\u53F3\u7709\u6BDB"
+        method: 0
+        bone: {fileID: 401806}
+        min: -0.113
+        max: -0.13
+        initValue: -0.11991989
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 401806}
+      sliderValue: 0.40705246
+      luaName: _eyeBrowPosX
+    - name: "\u7709\u6BDBZ\u4F4D\u79FB"
+      methods:
+      - name: "\u5DE6\u7709\u6BDB"
+        method: 2
+        bone: {fileID: 471804}
+        min: 0.018
+        max: 0.035
+        initValue: 0.02645996
+        isInit: 1
+        preMethod: 2
+        preBone: {fileID: 471804}
+      - name: "\u53F3\u7709\u6BDB"
+        method: 2
+        bone: {fileID: 401806}
+        min: -0.018
+        max: -0.035
+        initValue: -0.026375122
+        isInit: 1
+        preMethod: 2
+        preBone: {fileID: 401806}
+      sliderValue: 0.50734574
+      luaName: _eyeBrowPosZ
+    - name: "\u7709\u6BDBY\u65CB\u8F6C"
+      methods:
+      - name: "\u5DE6\u7709\u6BDB"
+        method: 4
+        bone: {fileID: 471804}
+        min: 155
+        max: 210
+        initValue: 179.99998
+        isInit: 1
+        preMethod: 4
+        preBone: {fileID: 471804}
+      - name: "\u53F3\u7709\u6BDB"
+        method: 4
+        bone: {fileID: 401806}
+        min: 25
+        max: -25
+        initValue: -180
+        isInit: 1
+        preMethod: 4
+        preBone: {fileID: 401806}
+      sliderValue: 4.1
+      luaName: _eyeBrowRotY
+    - name: "\u7709\u6BDBZ\u7F29\u653E"
+      methods:
+      - name: "\u5DE6\u7709\u6BDB"
+        method: 8
+        bone: {fileID: 471804}
+        min: 0.2
+        max: 1
+        initValue: 1
+        isInit: 1
+        preMethod: 8
+        preBone: {fileID: 471804}
+      - name: "\u53F3\u7709\u6BDB"
+        method: 8
+        bone: {fileID: 401806}
+        min: 0.2
+        max: 1
+        initValue: 1
+        isInit: 1
+        preMethod: 8
+        preBone: {fileID: 401806}
+      sliderValue: -0
+      luaName: _eyeBrowScaleZ
+    - name: "\u7709\u6BDBY\u7F29\u653E"
+      methods:
+      - name: "\u5DE6\u7709\u6BDB"
+        method: 7
+        bone: {fileID: 471804}
+        min: 0.1
+        max: 2
+        initValue: 1
+        isInit: 1
+        preMethod: 7
+        preBone: {fileID: 471804}
+      - name: "\u53F3\u7709\u6BDB"
+        method: 7
+        bone: {fileID: 401806}
+        min: 0.1
+        max: 2
+        initValue: 1
+        isInit: 1
+        preMethod: 7
+        preBone: {fileID: 401806}
+      sliderValue: 0.5263158
+      luaName: _eyeBrowScaleY
+  - name: "\u5634\u53D8\u5316\u7EC4\u5408"
+    groups:
+    - name: "\u5634X\u4F4D\u79FB"
+      methods:
+      - name: "\u5634"
+        method: 0
+        bone: {fileID: 442830}
+        min: -0.04
+        max: -0.049
+        initValue: -0.044857025
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 442830}
+      sliderValue: 0.5396696
+      luaName: _mousePosX
+    - name: "\u5634z\u7F29\u653E"
+      methods:
+      - name: "\u5634"
+        method: 8
+        bone: {fileID: 442830}
+        min: 0.67
+        max: 1.4
+        initValue: 0.99999994
+        isInit: 1
+        preMethod: 8
+        preBone: {fileID: 442830}
+      sliderValue: 0.54794526
+      luaName: _mouseScaleZ
+    - name: "\u5634y\u4F4D\u79FB"
+      methods:
+      - name: "\u5634"
+        method: 1
+        bone: {fileID: 442830}
+        min: 0.087
+        max: 0.084
+        initValue: 0.087088734
+        isInit: 1
+        preMethod: 1
+        preBone: {fileID: 442830}
+      sliderValue: -0.029578818
+      luaName: _mousePosY
+  - name: "\u5634\u89D2\u53D8\u5316\u7EC4\u5408"
+    groups:
+    - name: "\u5634\u89D2X\u4F4D\u79FB"
+      methods:
+      - name: "\u5DE6\u5634\u89D2"
+        method: 3
+        bone: {fileID: 462330}
+        min: -45
+        max: 30
+        initValue: -0
+        isInit: 1
+        preMethod: 3
+        preBone: {fileID: 462330}
+      - name: "\u53F3\u5634\u89D2"
+        method: 3
+        bone: {fileID: 470564}
+        min: -45
+        max: 30
+        initValue: -0.000008651422
+        isInit: 1
+        preMethod: 3
+        preBone: {fileID: 470564}
+      sliderValue: 0.5999999
+      luaName: _mouthPosX
+    - name: "\u5634\u89D2Y\u4F4D\u79FB"
+      methods:
+      - name: "\u5DE6\u5634\u89D2"
+        method: 1
+        bone: {fileID: 462330}
+        min: 0.007
+        max: -0.007
+        initValue: 0.00000015258789
+        isInit: 1
+        preMethod: 1
+        preBone: {fileID: 462330}
+      - name: "\u53F3\u5634\u89D2"
+        method: 1
+        bone: {fileID: 470564}
+        min: 0.007
+        max: -0.007
+        initValue: 0
+        isInit: 1
+        preMethod: 1
+        preBone: {fileID: 470564}
+      sliderValue: 0.5
+      luaName: _mouthPosY
+  - name: "\u9F3B\u5B50\u53D8\u5316\u7EC4\u5408"
+    groups:
+    - name: "\u9F3B\u5B50X\u4F4D\u79FB"
+      methods:
+      - name: "\u9F3B\u5B50"
+        method: 0
+        bone: {fileID: 424598}
+        min: -0.08
+        max: -0.0668
+        initValue: -0.07194381
+        isInit: 1
+        preMethod: 0
+        preBone: {fileID: 424598}
+      sliderValue: 0.6103171
+      luaName: _nosePosX
+    - name: "\u9F3B\u5B50Y\u4F4D\u79FB"
+      methods:
+      - name: "\u9F3B\u5B50"
+        method: 1
+        bone: {fileID: 424598}
+        min: 0.096
+        max: 0.104
+        initValue: 0.09949739
+        isInit: 1
+        preMethod: 1
+        preBone: {fileID: 424598}
+      sliderValue: 0.43717393
+      luaName: _nosePosY
+    - name: "\u9F3B\u5B50Z\u65CB\u8F6C"
+      methods:
+      - name: "\u9F3B\u5B50"
+        method: 5
+        bone: {fileID: 424598}
+        min: 240
+        max: 300
+        initValue: 261.0001
+        isInit: 1
+        preMethod: 5
+        preBone: {fileID: 424598}
+      sliderValue: 0.432
+      luaName: _noseRotZ
+  initPrefab: {fileID: 0}
+  pinchMesh: {fileID: 0}
+  linkMesh: {fileID: 0}
+--- !u!137 &13706594
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172452}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 75923458f10b80a46a4abd9bd84d9e85, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 688973e456ed4914cb392021f95ae00b, type: 3}
+  m_Bones:
+  - {fileID: 471804}
+  - {fileID: 467834}
+  - {fileID: 488374}
+  - {fileID: 424598}
+  - {fileID: 459612}
+  - {fileID: 442830}
+  - {fileID: 462330}
+  - {fileID: 434404}
+  - {fileID: 401806}
+  - {fileID: 469572}
+  - {fileID: 470564}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 467834}
+  m_AABB:
+    m_Center: {x: -0.090588704, y: 0.009081211, z: -0.000000037252903}
+    m_Extent: {x: 0.10799612, y: 0.09543377, z: 0.076576}
+  m_DirtyAABB: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 137076}
+  m_IsPrefabParent: 1
