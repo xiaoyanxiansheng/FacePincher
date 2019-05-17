@@ -1,73 +1,63 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 #region 骨骼信息的改变
 public enum FaceBonesChangeType
 {
+    // 位置
     PositionX,
     PositionY,
     PositionZ,
 
+    // 旋转
     RotationX,
     RotationY,
     RotationZ,
 
+    // 缩放
     ScaleX,
     ScaleY,
     ScaleZ,
 }
+
 [Serializable]
 public class FaceBone
 {
     public string name = "";
+    // 骨骼改变类型(坐标、旋转、缩放)
     public FaceBonesChangeType changeType = FaceBonesChangeType.PositionX;
-    public Transform bone;
-    public float startValue = 0;
-    public float endValue = 0;
-    [HideInInspector]
-    public bool isInit = false;
-    [HideInInspector]
-    public Transform preBone;
-    [HideInInspector]
-    public FaceBonesChangeType preChangeType = FaceBonesChangeType.PositionX;
+    public Transform bone;          // 当前需要改变的骨骼
+    public float startValue = 0;    // 差值的开始值
+    public float endValue = 0;      // 差值的结束值       
 
+    private Transform _preBone;     // 上一次改变的骨头(用于更新)
+    // 上一次骨骼改变类型(用于更新)
+    private FaceBonesChangeType _preChangeType = FaceBonesChangeType.PositionX;
+    // 是否已经初始化
+    private bool _isInit = false;
+
+    // 是否需要重置
     private bool IsDirty()
     {
-        return preChangeType != changeType || preBone != bone;
+        return _preChangeType != changeType || _preBone != bone;
     }
+
+    // 初始化数据
     private void Init()
     {
-        if (isInit)
+        if (_isInit)
             return;
-        isInit = true;
+        _isInit = true;
         SetInitTransValue(bone);
     }
+
     private void UnInit()
     {
-        isInit = false;
+        _isInit = false;
     }
 
-    public void InitBone(Transform initFace)
-    {
-        if (bone == null) return;
-
-        // 取当前骨骼路径然后去初始化脸中找初始化数据
-        string path = "";
-        Transform tempTrans = bone;
-        Transform root = bone.root;
-        while(tempTrans != root)
-        {
-            path = tempTrans.name + path;
-            if (tempTrans.parent != root)
-                path = "/" + path;
-            tempTrans = tempTrans.parent;
-        }
-        Transform initTrans = initFace.Find(path);
-        SetInitTransValue(initTrans);
-    }
-
+    // 设置差值(0-1)
     public void SetSlerp(float slerp)
     {
         if (bone == null) return;
@@ -75,8 +65,8 @@ public class FaceBone
         if (IsDirty()) UnInit();
         Init();
 
-        preBone = bone;
-        preChangeType = changeType;
+        _preBone = bone;
+        _preChangeType = changeType;
 
         Vector3 pos = bone.localPosition;
         Vector3 rotation = bone.localEulerAngles;
@@ -119,6 +109,7 @@ public class FaceBone
         bone.localScale = scale;
     }
 
+    // 根据骨骼初始化数据(改变骨骼和改变骨骼类型时会触发)
     public void SetInitTransValue(Transform sourceBone)
     {
         if (sourceBone == null)
@@ -160,6 +151,19 @@ public class FaceBone
         startValue = value;
         endValue = value;
     }
+
+    // 重置数据(初始化成其他脸型)
+    public void ResetData(FaceBone initFaceBone, Transform bone, Transform preBone)
+    {
+        name = initFaceBone.name;
+        this.bone = bone;
+        _preBone = preBone;
+        changeType = initFaceBone.changeType;
+        _preChangeType = changeType;
+        startValue = initFaceBone.startValue;
+        endValue = initFaceBone.endValue;
+        _isInit = true;
+    }
 }
 #endregion
 
@@ -180,12 +184,10 @@ public class FaceGroupPart
         }
     }
 
-    public void InitGroupPart(Transform initFace)
+    public void ResetData(FaceGroupPart initFaceGroupPart)
     {
-        foreach (FaceBone faceBone in faceBones)
-        {
-            faceBone.InitBone(initFace);
-        }
+        name = initFaceGroupPart.name;
+        slerp = initFaceGroupPart.slerp;
     }
 }
 #endregion
@@ -205,19 +207,19 @@ public class FaceGroup
         }
     }
 
-    public void InitGroup(Transform initFace)
+    public void ResetData(FaceGroup initFaceGroup)
     {
-        foreach(FaceGroupPart faceGroupPart in faceGroupParts)
-        {
-            faceGroupPart.InitGroupPart(initFace);
-        }
+        name = initFaceGroup.name;
     }
 }
 #endregion
 
+#region 脸部管理
 public class FacePincher : MonoBehaviour
 {
+    // 可以初始化成其他脸型
     public Transform initFace;
+    // 设置引用脸型
     public SkinnedMeshRenderer linkMeshRenderer;
     [HideInInspector]
     public SkinnedMeshRenderer pincherMeshRenderer;
@@ -231,8 +233,11 @@ public class FacePincher : MonoBehaviour
         tempMesh = new Mesh();
     }
 
-    [ContextMenu("InitFace")]
-    public void InitFace()
+    /// <summary>
+    /// 克隆其他脸型
+    /// </summary>
+    [ContextMenu("CloneFace")]
+    public void CloneFace()
     {
         if (initFace == null)
         {
@@ -240,11 +245,46 @@ public class FacePincher : MonoBehaviour
             return;
         }
 
-        foreach(FaceGroup faceGroup in faceGroups)
+        faceGroups.Clear();
+        FacePincher initFacePicher = initFace.GetComponent<FacePincher>();
+        foreach (FaceGroup faceGroup in initFacePicher.faceGroups)
         {
-            faceGroup.InitGroup(initFace);
+            // 初始化faceGroup数据
+            FaceGroup tempGroup = new FaceGroup();
+            faceGroups.Add(tempGroup);
+            tempGroup.ResetData(tempGroup);
+            foreach (FaceGroupPart faceGroupPart in faceGroup.faceGroupParts)
+            {
+                // 初始化faceGroupPart数据
+                FaceGroupPart tempFaceGroupPart = new FaceGroupPart();
+                tempGroup.faceGroupParts.Add(tempFaceGroupPart);
+                tempFaceGroupPart.ResetData(faceGroupPart);
+                foreach (FaceBone faceBone in faceGroupPart.faceBones)
+                {
+                    // 初始化faceBone数据
+                    FaceBone tempFaceBones = new FaceBone();
+                    tempFaceGroupPart.faceBones.Add(tempFaceBones);
+                    string path = "";
+                    Transform tempTrans = faceBone.bone;
+                    Transform root = faceBone.bone.root;
+                    while (tempTrans != root)
+                    {
+                        path = tempTrans.name + path;
+                        if (tempTrans.parent != root)
+                            path = "/" + path;
+                        tempTrans = tempTrans.parent;
+                    }
+                    Transform bone = transform.Find(path);
+                    tempFaceBones.ResetData(faceBone, bone, bone);
+                }
+            }
         }
+        OnValidate();
     }
+
+    /// <summary>
+    /// 设置引用脸型
+    /// </summary>
     [ContextMenu("BakeMesh")]
     public void BakeMesh()
     {
@@ -252,7 +292,9 @@ public class FacePincher : MonoBehaviour
 
         tempMesh.Clear(true);
         pincherMeshRenderer.BakeMesh(tempMesh);
+        // 变化矩阵
         tempMesh.bindposes = linkMeshRenderer.sharedMesh.bindposes;
+        // 骨骼权重
         tempMesh.boneWeights = linkMeshRenderer.sharedMesh.boneWeights;
         linkMeshRenderer.sharedMesh = tempMesh;
     }
@@ -271,3 +313,4 @@ public class FacePincher : MonoBehaviour
     }
 #endif
 }
+#endregion
